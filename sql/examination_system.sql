@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50716
 File Encoding         : 65001
 
-Date: 2017-07-08 00:03:38
+Date: 2018-04-25 00:03:38
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,7 +31,8 @@ CREATE TABLE `college` (
 INSERT INTO `college` VALUES ('1', '计算机系');
 INSERT INTO `college` VALUES ('2', '设计系');
 INSERT INTO `college` VALUES ('3', '财经系');
-
+INSERT INTO `college` VALUES ('4', '美术系');
+INSERT INTO `college` VALUES ('5', '物电系');
 -- ----------------------------
 -- Table structure for course
 -- ----------------------------
@@ -56,12 +57,14 @@ CREATE TABLE `course` (
 -- ----------------------------
 -- Records of course
 -- ----------------------------
-INSERT INTO `course` VALUES ('1', 'C语言程序设计', '1001', '周二', '科401', '18', '必修课', '1', '3');
-INSERT INTO `course` VALUES ('2', 'Python爬虫技巧', '1001', '周四', 'X402', '18', '必修课', '1', '3');
-INSERT INTO `course` VALUES ('3', '数据结构', '1001', '周四', '科401', '18', '必修课', '1', '2');
-INSERT INTO `course` VALUES ('4', 'Java程序设计', '1002', '周五', '科401', '18', '必修课', '1', '2');
-INSERT INTO `course` VALUES ('5', '英语', '1002', '周四', 'X302', '18', '必修课', '2', '2');
-INSERT INTO `course` VALUES ('6', '服装设计', '1003', '周一', '科401', '18', '选修课', '2', '2');
+INSERT INTO `course` VALUES (1, 'C语言程序设计', 1001, '周二', '科401', 18, '必修课', 1, 3);
+INSERT INTO `course` VALUES (2, 'Python爬虫技巧', 1001, '周四', 'X402', 18, '必修课', 1, 3);
+INSERT INTO `course` VALUES (3, '数据结构', 1001, '周四', '科401', 18, '必修课', 1, 2);
+INSERT INTO `course` VALUES (4, 'Java程序设计', 1002, '周五', '科401', 18, '必修课', 1, 2);
+INSERT INTO `course` VALUES (5, '英语', 1002, '周四', 'X302', 18, '必修课', 2, 2);
+INSERT INTO `course` VALUES (6, '服装设计', 1003, '周一', '科401', 18, '选修课', 2, 2);
+INSERT INTO `course` VALUES (7, '物联网导论', 666, '周二', '一教501', 18, '必修课', 1, 5);
+INSERT INTO `course` VALUES (1001, 'JAVA高级实战编程', 1001, '周三', '五教201', 18, '选修课', 1, 5);
 
 -- ----------------------------
 -- Table structure for role
